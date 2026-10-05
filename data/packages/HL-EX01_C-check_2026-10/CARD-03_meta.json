@@ -1,0 +1,30 @@
+{
+  "synthetic": false,
+  "real_public_data": true,
+  "source_case": "CRF-C32-12J-2216",
+  "equipment_id": "UTstudio+ 4.2.3, 위상배열 유닛 I012866",
+  "probe": {
+    "frequency_mhz": 10.0,
+    "type": "phased array, wedge/wheel (Cranfield)"
+  },
+  "reference_db": 0.0,
+  "reference_note": "N/A (자기 참조: 스캔 중앙값)",
+  "gate": {
+    "start_sample": 323,
+    "end_sample": 388,
+    "note": "바닥면 에코 -30~+35 샘플, 최대 포락선"
+  },
+  "grid": {
+    "pitch_mm": 0.6,
+    "width_mm": 100.2,
+    "height_mm": 34.2,
+    "rows": 57,
+    "cols": 167
+  },
+  "pitch_note": "프레임 1.0 mm, 채널 약 0.6 mm (처리 TIFF 축에서 추정, 설명서 명시 없음). 정방 0.6 mm로 선형 보간.",
+  "amplitude_unit": "dB relative to scan median back-wall amplitude",
+  "thickness_mm": 3.8,
+  "thickness_note": "Cranfield 설명서의 평균 경화 두께 (측정 계산에는 쓰지 않고 절차 적합성 확인에만 씀)",
+  "scan_date": "2020-01-28",
+  "source_citation": "Padiyar, J. et al., Dataset of the WP2 Cranfield, Zenodo, DOI 10.5281/zenodo.4405277, CC BY 4.0 (H2020 FET OPEN CompInnova, Grant Agreement No. 665238). 본 파일은 변환(파생) 데이터이다."
+}

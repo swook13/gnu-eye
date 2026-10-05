@@ -1,0 +1,427 @@
+{
+  "when": "2026-10-06 01:11:24",
+  "llm": {
+    "ok": true,
+    "host": "http://localhost:11525",
+    "model": "qwen2.5:14b",
+    "error": null
+  },
+  "package": "4_mfg_lot_GNU-LOT-2610-07_hybrid.zip",
+  "turns": [
+    "생산 로트 패키지 GNU-LOT-2610-07_hybrid의 검사 부품 7건을 고객사양과 대조하고 로트 검사 보고서와 NCR 초안을 만들어 줘.",
+    "PART-04의 고객사양 개정번호는 Rev B입니다.",
+    "PART-01 승인합니다.",
+    "검사원 김검사: PART-06 반려합니다. IND-01은 표면 신호라 제외.",
+    "검사원 김검사: 전체 부품 승인합니다."
+  ],
+  "runs": [
+    {
+      "mode": "고정 순서 (LLM 없음)",
+      "ok": {
+        "MTC1": true,
+        "MTC2": true,
+        "MTC3": true,
+        "MTC4": true,
+        "MTC5": true,
+        "MTC6": true,
+        "MTC7": true,
+        "MTC8": true
+      },
+      "sec": {
+        "start": 0.9,
+        "answer": 0.8,
+        "no_name": 0.0,
+        "reject": 0.1,
+        "approve": 0.0
+      },
+      "total_sec": 1.8,
+      "snap": {
+        "asked": [
+          "PART-04"
+        ],
+        "report_before_answer": false,
+        "guessed_rev": null,
+        "disp": {
+          "PART-01": "ALLOW",
+          "PART-02": "REPAIR",
+          "PART-03": "EXCEED",
+          "PART-04": "ALLOW",
+          "PART-05": "EXCEED",
+          "PART-06": "EXCEED",
+          "PART-07": "EXCEED"
+        },
+        "major": {
+          "PART-01": [],
+          "PART-02": [
+            6.4
+          ],
+          "PART-03": [
+            18.9
+          ],
+          "PART-04": [
+            7.81
+          ],
+          "PART-05": [
+            9.21
+          ],
+          "PART-06": [
+            42.72,
+            5.65
+          ],
+          "PART-07": [
+            23.43
+          ]
+        },
+        "rules": {
+          "PART-01": [],
+          "PART-02": [
+            "A-1"
+          ],
+          "PART-03": [
+            "A-1",
+            "A-3"
+          ],
+          "PART-04": [],
+          "PART-05": [
+            "B-3"
+          ],
+          "PART-06": [
+            "B-1"
+          ],
+          "PART-07": [
+            "B-1"
+          ]
+        },
+        "ncr": {
+          "PART-03": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          },
+          "PART-05": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          },
+          "PART-06": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          },
+          "PART-07": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          }
+        },
+        "history3": "같은 부품번호의 과거 NCR 9건. 최근 2026-07-22 NCR-2026-0031, 장축 24.3 mm, 처분 수리. 결함 유형별: 기공 4건, 박리 4건, 이물질 1건. 과거 기록의 원인(참고): 취급 충격 3건, 진공백 누설 3건, 경화 사이클 압력 편차 2건",
+        "opinion": [
+          "생산 로트 GNU-LOT-2610-07 출하 전 초음파 C-scan 검사 (가상) 부품 7건 처리 결과: 적합(기록) 2건, 보류(재검사 권고) 1건, 부적합(NCR 대상) 4건, 미평가 0건. 같은 부품번호의 과거 NCR 있음: PART-01, PART-02, PART-03, PART-04, PART-05, PART-06, PART-07. 재검사 권고: PART-02. 검사원 승인 0/7건.",
+          "template"
+        ],
+        "signoffs_after_no_name": 0,
+        "excluded6": [
+          "IND-01"
+        ],
+        "disp6_after": "ALLOW",
+        "status": "APPROVED",
+        "opinion_final": [
+          "생산 로트 GNU-LOT-2610-07 출하 전 초음파 C-scan 검사 (가상) 부품 7건 처리 결과: 적합(기록) 3건, 보류(재검사 권고) 1건, 부적합(NCR 대상) 3건, 미평가 0건. 같은 부품번호의 과거 NCR 있음: PART-01, PART-02, PART-03, PART-04, PART-05, PART-06, PART-07. 재검사 권고: PART-02. 전 부품 검사원 승인 완료(7건).",
+          "template"
+        ]
+      },
+      "llm_calls": 0,
+      "llm_calls_blocked": 0,
+      "fallbacks": [],
+      "nudges": [],
+      "tool_calls": 15,
+      "code_calls": 15,
+      "inspect_sec": [
+        0.78
+      ]
+    },
+    {
+      "mode": "LLM qwen2.5:14b",
+      "ok": {
+        "MTC1": true,
+        "MTC2": true,
+        "MTC3": true,
+        "MTC4": true,
+        "MTC5": true,
+        "MTC6": true,
+        "MTC7": true,
+        "MTC8": false
+      },
+      "sec": {
+        "start": 11.1,
+        "answer": 37.5,
+        "no_name": 39.9,
+        "reject": 42.5,
+        "approve": 17.4
+      },
+      "total_sec": 148.4,
+      "snap": {
+        "asked": [
+          "PART-04"
+        ],
+        "report_before_answer": false,
+        "guessed_rev": null,
+        "disp": {
+          "PART-01": "ALLOW",
+          "PART-02": "REPAIR",
+          "PART-03": "EXCEED",
+          "PART-04": "ALLOW",
+          "PART-05": "EXCEED",
+          "PART-06": "EXCEED",
+          "PART-07": "EXCEED"
+        },
+        "major": {
+          "PART-01": [],
+          "PART-02": [
+            6.4
+          ],
+          "PART-03": [
+            18.9
+          ],
+          "PART-04": [
+            7.81
+          ],
+          "PART-05": [
+            9.21
+          ],
+          "PART-06": [
+            42.72,
+            5.65
+          ],
+          "PART-07": [
+            23.43
+          ]
+        },
+        "rules": {
+          "PART-01": [],
+          "PART-02": [
+            "A-1"
+          ],
+          "PART-03": [
+            "A-1",
+            "A-3"
+          ],
+          "PART-04": [],
+          "PART-05": [
+            "B-3"
+          ],
+          "PART-06": [
+            "B-1"
+          ],
+          "PART-07": [
+            "B-1"
+          ]
+        },
+        "ncr": {
+          "PART-03": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          },
+          "PART-05": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          },
+          "PART-06": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          },
+          "PART-07": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          }
+        },
+        "history3": "같은 부품번호의 과거 NCR 9건. 최근 2026-07-22 NCR-2026-0031, 장축 24.3 mm, 처분 수리. 결함 유형별: 기공 4건, 박리 4건, 이물질 1건. 과거 기록의 원인(참고): 취급 충격 3건, 진공백 누설 3건, 경화 사이클 압력 편차 2건",
+        "opinion": [
+          "PART-01 부품은 스캔에서 6 dB drop으로 잡히는 지시가 없어 처분 초안 적합(기록)으로 처리되었습니다. PART-02 부품은 지시 1건이 확인되어 GNU-SPEC-UT-001 Rev A A 구역 기준으로 처분 초안 보류(재검사 권고)로 처리되었습니다. PART-03, PART-05, PART-06, PART-07 부품은 각각 지시 크기나 누적 지시 면적이 사양 한도를 초과하여 처분 초안 부적합(NCR 대상)으로 처리되었습니다. 최종 판단과 서명은 자격 검사원이 합니다.",
+          "llm"
+        ],
+        "signoffs_after_no_name": 0,
+        "excluded6": [],
+        "disp6_after": "EXCEED",
+        "status": "APPROVED",
+        "opinion_final": [
+          "PART-01 부품은 스캔에서 6 dB drop으로 잡히는 지시가 없어 처분 초안 적합(기록)으로 처리되었습니다. PART-02 부품은 지시 1건이 확인되어 GNU-SPEC-UT-001 Rev A A 구역 기준으로 처분 초안 보류(재검사 권고)로 처리되었습니다. PART-03, PART-05, PART-06, PART-07 부품은 각각 지시 크기와 누적 지시 면적이 사양 한도를 초과하여 처분 초안 부적합(NCR 대상)으로 처리되었습니다. 최종 판단과 서명은 자격 검사원이 합니다.",
+          "llm"
+        ]
+      },
+      "llm_calls": 20,
+      "llm_calls_blocked": 2,
+      "fallbacks": [],
+      "nudges": [],
+      "tool_calls": 20,
+      "code_calls": 0,
+      "inspect_sec": [
+        0.38
+      ]
+    },
+    {
+      "mode": "LLM qwen2.5:14b",
+      "ok": {
+        "MTC1": true,
+        "MTC2": true,
+        "MTC3": true,
+        "MTC4": true,
+        "MTC5": true,
+        "MTC6": true,
+        "MTC7": true,
+        "MTC8": false
+      },
+      "sec": {
+        "start": 12.3,
+        "answer": 30.6,
+        "no_name": 40.6,
+        "reject": 39.9,
+        "approve": 17.2
+      },
+      "total_sec": 140.6,
+      "snap": {
+        "asked": [
+          "PART-04"
+        ],
+        "report_before_answer": false,
+        "guessed_rev": null,
+        "disp": {
+          "PART-01": "ALLOW",
+          "PART-02": "REPAIR",
+          "PART-03": "EXCEED",
+          "PART-04": "ALLOW",
+          "PART-05": "EXCEED",
+          "PART-06": "EXCEED",
+          "PART-07": "EXCEED"
+        },
+        "major": {
+          "PART-01": [],
+          "PART-02": [
+            6.4
+          ],
+          "PART-03": [
+            18.9
+          ],
+          "PART-04": [
+            7.81
+          ],
+          "PART-05": [
+            9.21
+          ],
+          "PART-06": [
+            42.72,
+            5.65
+          ],
+          "PART-07": [
+            23.43
+          ]
+        },
+        "rules": {
+          "PART-01": [],
+          "PART-02": [
+            "A-1"
+          ],
+          "PART-03": [
+            "A-1",
+            "A-3"
+          ],
+          "PART-04": [],
+          "PART-05": [
+            "B-3"
+          ],
+          "PART-06": [
+            "B-1"
+          ],
+          "PART-07": [
+            "B-1"
+          ]
+        },
+        "ncr": {
+          "PART-03": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          },
+          "PART-05": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          },
+          "PART-06": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          },
+          "PART-07": {
+            "system_filled": 10,
+            "system_fields": 10,
+            "total": 12
+          }
+        },
+        "history3": "같은 부품번호의 과거 NCR 9건. 최근 2026-07-22 NCR-2026-0031, 장축 24.3 mm, 처분 수리. 결함 유형별: 기공 4건, 박리 4건, 이물질 1건. 과거 기록의 원인(참고): 취급 충격 3건, 진공백 누설 3건, 경화 사이클 압력 편차 2건",
+        "opinion": [
+          "PART-01 부품은 스캔에서 6 dB drop으로 잡히는 지시가 없어 처분 초안 적합(기록)으로 처리되었습니다. PART-02 부품은 지시 1건이 확인되어 GNU-SPEC-UT-001 Rev A A 구역 기준으로 처분 초안 보류(재검사 권고)로 처리되었습니다. PART-03, PART-05, PART-06, PART-07 부품은 각각 지시 크기와 누적 지시 면적이 사양 한도를 초과하여 처분 초안 부적합(NCR 대상)으로 처리되었습니다. 최종 판단과 서명은 자격 검사원이 합니다.",
+          "llm"
+        ],
+        "signoffs_after_no_name": 0,
+        "excluded6": [],
+        "disp6_after": "EXCEED",
+        "status": "APPROVED",
+        "opinion_final": [
+          "PART-01 부품은 스캔에서 6 dB drop으로 잡히는 지시가 없어 처분 초안 적합(기록)으로 처리되었습니다. PART-02 부품은 지시 1건이 확인되어 GNU-SPEC-UT-001 Rev A A 구역 기준으로 처분 초안 보류(재검사 권고)로 처리되었습니다. PART-03, PART-05, PART-06, PART-07 부품은 각각 지시 크기와 누적 지시 면적이 사양 한도를 초과하여 처분 초안 부적합(NCR 대상)으로 처리되었습니다. 최종 판단과 서명은 자격 검사원이 합니다.",
+          "llm"
+        ]
+      },
+      "llm_calls": 20,
+      "llm_calls_blocked": 2,
+      "fallbacks": [],
+      "nudges": [],
+      "tool_calls": 20,
+      "code_calls": 0,
+      "inspect_sec": [
+        0.26
+      ]
+    }
+  ],
+  "truth": [
+    [
+      "PART-02",
+      "IND-01",
+      6.25,
+      6.4,
+      0.15
+    ],
+    [
+      "PART-04",
+      "IND-01",
+      7.83,
+      7.81,
+      -0.02
+    ],
+    [
+      "PART-06",
+      "IND-01",
+      39.62,
+      42.72,
+      3.1
+    ],
+    [
+      "PART-06",
+      "IND-02",
+      5.02,
+      5.65,
+      0.63
+    ],
+    [
+      "PART-07",
+      "IND-01",
+      22.71,
+      23.43,
+      0.72
+    ]
+  ]
+}

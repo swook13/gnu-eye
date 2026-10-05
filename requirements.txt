@@ -1,0 +1,14 @@
+# 실행 (Python 3.13.3에서 확인)
+fastapi==0.142.2
+starlette==1.7.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+pydantic==2.13.5
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+
+# 테스트
+pytest==9.1.1
+httpx==0.28.1
+playwright==1.63.0   # tests/e2e_browser.py (설치된 Chrome 사용)

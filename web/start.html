@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>지누아이(GNU-Eye) - 항공 복합재 초음파 검사 보조 AI 에이전트</title>
+<link rel="icon" href="data:,"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="vendor/liquid-glass/glass.css"/>
+<style>
+:root{--ink:#14213D;--accent2:#2C7BE5;--ease-out:cubic-bezier(0.23,1,0.32,1)}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden}
+body{font-family:"Pretendard Variable",Pretendard,"Malgun Gothic",sans-serif;color:var(--ink);background:radial-gradient(1200px 800px at 50% 38%,#FFFFFF 0%,#F3F7FD 45%,#E6EEF9 100%);-webkit-font-smoothing:antialiased;letter-spacing:-.01em}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(31,58,95,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(31,58,95,.05) 1px,transparent 1px);background-size:40px 40px;-webkit-mask-image:radial-gradient(ellipse at 50% 45%,#000 20%,transparent 70%);mask-image:radial-gradient(ellipse at 50% 45%,#000 20%,transparent 70%)}
+#sky{position:fixed;inset:0;width:100%;height:100%;display:block}
+#shadow{position:fixed;left:50%;top:50%;width:min(52vw,640px);height:46px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(20,40,80,.20),rgba(20,40,80,.06) 60%,transparent);filter:blur(6px);pointer-events:none}
+.stage{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:0 24px 13vh;text-align:center;pointer-events:none}
+.stage>*{pointer-events:auto}
+.mark{display:flex;align-items:center;gap:18px}
+.logo-eye{width:76px;height:76px;color:var(--ink);overflow:visible}
+.word{display:flex;flex-direction:column;align-items:flex-start;line-height:1}
+.word .ko{font-size:52px;font-weight:800;letter-spacing:-.04em}
+.word .en{font-family:"Space Grotesk",sans-serif;font-size:17px;font-weight:600;color:var(--accent2);letter-spacing:.14em;margin-top:8px}
+.word span.ch{display:inline-block}
+.tagline{margin:22px 0 34px;font-size:17px;color:#43474e;font-weight:500}
+.btn-wrap{min-height:72px;display:flex;align-items:center;justify-content:center}
+.glass-button{box-shadow:0 18px 40px -16px rgba(20,40,80,.45)!important}
+.glass-button-text{color:var(--ink)!important;font-family:"Pretendard Variable",Pretendard,sans-serif!important;font-weight:700!important;letter-spacing:-.01em}
+.start-btn{display:inline-flex;align-items:center;gap:10px;height:60px;padding:0 34px;border-radius:999px;font-size:20px;font-weight:700;color:var(--ink);text-decoration:none;background:linear-gradient(140deg,rgba(255,255,255,.85),rgba(255,255,255,.5));-webkit-backdrop-filter:blur(18px) saturate(180%);backdrop-filter:blur(18px) saturate(180%);box-shadow:inset 0 1px 1px #fff,inset 0 0 0 1px rgba(255,255,255,.7),0 0 0 1px rgba(31,58,95,.08),0 18px 40px -16px rgba(20,40,80,.45);transition:transform .16s var(--ease-out),box-shadow .2s ease}
+.start-btn:active{transform:scale(.97)}
+.start-btn:focus-visible,[role=button]:focus-visible{outline:2px solid var(--accent2);outline-offset:4px}
+.foot{position:fixed;left:0;right:0;bottom:22px;z-index:2;text-align:center;font-size:12px;color:#74777f}
+.foot b{font-weight:600;color:#43474e}
+.hint{font-size:12px;color:#8a93a3;margin-top:14px}
+@media (max-width:640px){.logo-eye{width:56px;height:56px}.word .ko{font-size:38px}.tagline{font-size:15px}}
+@media (prefers-reduced-motion:reduce){.start-btn{transition:none}}
+</style>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script>
+</head>
+<body>
+<div id="shadow" data-html2canvas-ignore="true" aria-hidden="true"></div>
+<canvas id="sky" data-html2canvas-ignore="true" aria-hidden="true"></canvas>
+<main class="stage" id="stage">
+  <div class="mark" id="mark">
+    <svg class="logo-eye" viewBox="0 0 48 48" aria-hidden="true">
+      <defs><linearGradient id="lg-iris-s" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2C7BE5"/><stop offset="1" stop-color="#14B8A6"/></linearGradient></defs>
+      <g class="eye-lid"><path class="lid" d="M4 24C11.5 13 36.5 13 44 24C36.5 35 11.5 35 4 24Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" pathLength="100"/></g>
+      <circle class="iris" cx="24" cy="24" r="7.6" fill="none" stroke="url(#lg-iris-s)" stroke-width="2.8" stroke-linecap="round" stroke-dasharray="40 7.8" transform="rotate(-60 24 24)"/>
+      <circle class="pupil" cx="24" cy="24" r="3.1" fill="currentColor"/>
+      <circle class="glint" cx="26.6" cy="21.4" r="1.1" fill="#fff"/>
+      <line class="scan" x1="24" y1="11" x2="24" y2="37" stroke="#14B8A6" stroke-width="1.6" stroke-linecap="round" opacity="0"/>
+    </svg>
+    <div class="word" aria-label="지누아이 GNU-Eye"><span class="ko" id="ko">지누아이</span><span class="en" id="en">GNU-EYE</span></div>
+  </div>
+  <p class="tagline" id="tagline">항공 복합재 초음파 검사 결과를 기준과 대조하고, 보고서 초안까지 준비하는 AI 에이전트</p>
+  <div class="btn-wrap" id="btn-wrap"><a class="start-btn" id="start-fallback" href="index.html">시작하기<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+</main>
+<div class="foot" id="foot"><b>제4회 경남 AI·SW 경진대회</b> · 경상국립대학교 지누아이 팀 · 최종 판단과 서명은 검사원이 합니다</div>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/html2canvas.min.js"></script>
+<script src="vendor/liquid-glass/container.js"></script>
+<script src="vendor/liquid-glass/button.js"></script>
+<script type="module" src="start.js"></script>
+</body>
+</html>

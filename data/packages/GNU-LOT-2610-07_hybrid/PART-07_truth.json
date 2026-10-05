@@ -1,0 +1,37 @@
+{
+  "part": "PART-07",
+  "seed": 2607,
+  "note": "노이즈 없는 미세 격자(0.25 mm)에서 같은 6 dB 정의로 잰 값과 공칭 장축(2a)",
+  "defects": [
+    {
+      "kind": "porosity",
+      "cx": 160,
+      "cy": 100,
+      "a": 9.0,
+      "b": 6.0,
+      "theta_deg": 30,
+      "loss_db": 9.0,
+      "edge_w": 3.0,
+      "harmonics": [
+        [
+          2,
+          0.08,
+          1.0
+        ]
+      ],
+      "texture": true,
+      "kind_ko": "기공 군집",
+      "nominal_major_mm": 18.0
+    }
+  ],
+  "truth_indications": [
+    {
+      "id": "IND-01",
+      "major_mm": 22.71,
+      "minor_mm": 10.77,
+      "area_mm2": 187.56,
+      "centroid_x_mm": 158.72,
+      "centroid_y_mm": 99.75
+    }
+  ]
+}

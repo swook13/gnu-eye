@@ -1,0 +1,304 @@
+{
+  "when": "2026-10-06 04:15:55",
+  "llm": {
+    "ok": true,
+    "host": "http://localhost:11434",
+    "model": "qwen2.5:7b",
+    "error": null
+  },
+  "package": "HL-EX01_C-check_2026-10",
+  "turns": [
+    "패키지 HL-EX01_C-check_2026-10의 정기점검 작업카드 6건을 처리하고 기체 단위 점검 보고서 초안을 만들어 줘.",
+    "CARD-05의 기준 개정번호는 Rev B입니다.",
+    "CARD-01 승인합니다.",
+    "검사원 김검사: CARD-03 반려합니다. IND-02는 표면 신호라 제외.",
+    "검사원 김검사: 전체 카드 승인합니다."
+  ],
+  "runs": [
+    {
+      "mode": "고정 순서 (LLM 없음)",
+      "ok": {
+        "TC1": true,
+        "TC2": true,
+        "TC3": true,
+        "TC4": true,
+        "TC5": true,
+        "TC6": true,
+        "TC7": true,
+        "TC8": true
+      },
+      "sec": {
+        "start": 0.5,
+        "answer": 0.3,
+        "no_name": 0.0,
+        "reject": 0.1,
+        "approve": 0.0
+      },
+      "total_sec": 0.9,
+      "snap": {
+        "asked": [
+          "CARD-05"
+        ],
+        "report_before_answer": false,
+        "guessed_rev": null,
+        "disp": {
+          "CARD-01": "ALLOW",
+          "CARD-02": "REPAIR",
+          "CARD-03": "EXCEED",
+          "CARD-04": "REPAIR",
+          "CARD-05": "ALLOW",
+          "CARD-06": "NOT_EVALUATED"
+        },
+        "major": {
+          "CARD-01": 9.21,
+          "CARD-02": 18.92,
+          "CARD-03": 26.95,
+          "CARD-04": 18.9,
+          "CARD-05": 11.33,
+          "CARD-06": null
+        },
+        "findings3": [
+          "Z1-D2",
+          "Z1-S1"
+        ],
+        "grew4": true,
+        "blocked6": "절차 부적합: 두께 3.8 mm가 절차 GNU-NTM-EX-51-01의 적용 범위 1.0~3.0 mm 밖. 측정·판정하지 않음.",
+        "report_id": "NDT-RPT-HL-EX01-20261006-034801",
+        "signoffs_after_no_name": 0,
+        "excluded3": [
+          "IND-02"
+        ],
+        "disp3_after": "EXCEED",
+        "major3_after": 26.95,
+        "stale_after_reject": false,
+        "status": "APPROVED",
+        "opinion_source": "template"
+      },
+      "llm_calls": 0,
+      "llm_calls_blocked": 0,
+      "fallbacks": [],
+      "nudges": [],
+      "first_inspect_sec": 0.23,
+      "tool_calls": 15,
+      "tool_calls_refused": 0
+    },
+    {
+      "mode": "LLM qwen2.5:7b",
+      "ok": {
+        "TC1": true,
+        "TC2": true,
+        "TC3": true,
+        "TC4": true,
+        "TC5": true,
+        "TC6": true,
+        "TC7": true,
+        "TC8": false
+      },
+      "sec": {
+        "start": 92.4,
+        "answer": 187.1,
+        "no_name": 117.1,
+        "reject": 250.1,
+        "approve": 82.0
+      },
+      "total_sec": 728.7,
+      "snap": {
+        "asked": [
+          "CARD-05"
+        ],
+        "report_before_answer": false,
+        "guessed_rev": null,
+        "disp": {
+          "CARD-01": "ALLOW",
+          "CARD-02": "REPAIR",
+          "CARD-03": "EXCEED",
+          "CARD-04": "REPAIR",
+          "CARD-05": "ALLOW",
+          "CARD-06": "NOT_EVALUATED"
+        },
+        "major": {
+          "CARD-01": 9.21,
+          "CARD-02": 18.92,
+          "CARD-03": 26.95,
+          "CARD-04": 18.9,
+          "CARD-05": 11.33,
+          "CARD-06": null
+        },
+        "findings3": [
+          "Z1-D2",
+          "Z1-S1"
+        ],
+        "grew4": true,
+        "blocked6": "절차 부적합: 두께 3.8 mm가 절차 GNU-NTM-EX-51-01의 적용 범위 1.0~3.0 mm 밖. 측정·판정하지 않음.",
+        "report_id": "NDT-RPT-HL-EX01-20261006-035226",
+        "signoffs_after_no_name": 0,
+        "excluded3": [
+          "IND-02"
+        ],
+        "disp3_after": "EXCEED",
+        "major3_after": 26.95,
+        "stale_after_reject": false,
+        "status": "DRAFT",
+        "opinion_source": "llm"
+      },
+      "llm_calls": 26,
+      "llm_calls_blocked": 13,
+      "fallbacks": [
+        "LLM이 최대 반복 횟수를 넘김",
+        "LLM이 draft_item_report 단계 전에 멈춰 코드가 이어서 진행",
+        "LLM이 draft_item_report 단계 전에 멈춰 코드가 이어서 진행"
+      ],
+      "nudges": [
+        "이력 조회를 아직 하지 않았다",
+        "항목별 초안이 없거나 최신이 아니다"
+      ],
+      "first_inspect_sec": 0.05,
+      "tool_calls": 30,
+      "tool_calls_refused": 13
+    },
+    {
+      "mode": "LLM qwen2.5:7b",
+      "ok": {
+        "TC1": true,
+        "TC2": true,
+        "TC3": true,
+        "TC4": true,
+        "TC5": true,
+        "TC6": true,
+        "TC7": true,
+        "TC8": false
+      },
+      "sec": {
+        "start": 76.5,
+        "answer": 254.1,
+        "no_name": 122.0,
+        "reject": 42.9,
+        "approve": 104.4
+      },
+      "total_sec": 599.9,
+      "snap": {
+        "asked": [
+          "CARD-05"
+        ],
+        "report_before_answer": false,
+        "guessed_rev": null,
+        "disp": {
+          "CARD-01": "ALLOW",
+          "CARD-02": "REPAIR",
+          "CARD-03": "EXCEED",
+          "CARD-04": "REPAIR",
+          "CARD-05": "ALLOW",
+          "CARD-06": "NOT_EVALUATED"
+        },
+        "major": {
+          "CARD-01": 9.21,
+          "CARD-02": 18.92,
+          "CARD-03": 26.95,
+          "CARD-04": 18.9,
+          "CARD-05": 11.33,
+          "CARD-06": null
+        },
+        "findings3": [
+          "Z1-D2",
+          "Z1-S1"
+        ],
+        "grew4": true,
+        "blocked6": "절차 부적합: 두께 3.8 mm가 절차 GNU-NTM-EX-51-01의 적용 범위 1.0~3.0 mm 밖. 측정·판정하지 않음.",
+        "report_id": "NDT-RPT-HL-EX01-20261006-040530",
+        "signoffs_after_no_name": 0,
+        "excluded3": [],
+        "disp3_after": "EXCEED",
+        "major3_after": 26.95,
+        "stale_after_reject": false,
+        "status": "APPROVED",
+        "opinion_source": "llm"
+      },
+      "llm_calls": 16,
+      "llm_calls_blocked": 5,
+      "fallbacks": [
+        "LLM 호출 실패 (TimeoutError: timed out)",
+        "LLM이 draft_item_report 단계 전에 멈춰 코드가 이어서 진행",
+        "LLM 호출 실패 (TimeoutError: timed out)"
+      ],
+      "nudges": [],
+      "first_inspect_sec": 0.18,
+      "tool_calls": 18,
+      "tool_calls_refused": 5
+    },
+    {
+      "mode": "LLM qwen2.5:7b",
+      "ok": {
+        "TC1": true,
+        "TC2": true,
+        "TC3": true,
+        "TC4": true,
+        "TC5": true,
+        "TC6": true,
+        "TC7": true,
+        "TC8": true
+      },
+      "sec": {
+        "start": 65.5,
+        "answer": 162.5,
+        "no_name": 28.3,
+        "reject": 56.8,
+        "approve": 31.4
+      },
+      "total_sec": 344.5,
+      "snap": {
+        "asked": [
+          "CARD-05"
+        ],
+        "report_before_answer": false,
+        "guessed_rev": null,
+        "disp": {
+          "CARD-01": "ALLOW",
+          "CARD-02": "REPAIR",
+          "CARD-03": "EXCEED",
+          "CARD-04": "REPAIR",
+          "CARD-05": "ALLOW",
+          "CARD-06": "NOT_EVALUATED"
+        },
+        "major": {
+          "CARD-01": 9.21,
+          "CARD-02": 18.92,
+          "CARD-03": 26.95,
+          "CARD-04": 18.9,
+          "CARD-05": 11.33,
+          "CARD-06": null
+        },
+        "findings3": [
+          "Z1-D2",
+          "Z1-S1"
+        ],
+        "grew4": true,
+        "blocked6": "절차 부적합: 두께 3.8 mm가 절차 GNU-NTM-EX-51-01의 적용 범위 1.0~3.0 mm 밖. 측정·판정하지 않음.",
+        "report_id": "NDT-RPT-HL-EX01-20261006-041348",
+        "signoffs_after_no_name": 0,
+        "excluded3": [
+          "IND-02"
+        ],
+        "disp3_after": "EXCEED",
+        "major3_after": 26.95,
+        "stale_after_reject": false,
+        "status": "APPROVED",
+        "opinion_source": "llm"
+      },
+      "llm_calls": 24,
+      "llm_calls_blocked": 12,
+      "fallbacks": [
+        "LLM이 최대 반복 횟수를 넘김",
+        "LLM이 draft_item_report 단계 전에 멈춰 코드가 이어서 진행",
+        "LLM이 inspect_package 단계 전에 멈춰 코드가 이어서 진행"
+      ],
+      "nudges": [
+        "항목별 초안이 없거나 최신이 아니다",
+        "측정과 한도 대조(또는 반려 후 재평가)를 하지 않은 항목이 있다",
+        "측정과 한도 대조(또는 반려 후 재평가)를 하지 않은 항목이 있다"
+      ],
+      "first_inspect_sec": 0.08,
+      "tool_calls": 30,
+      "tool_calls_refused": 12
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# 실행 중 생기는 파일 (세션 업로드, 보고서, 발송 파일, 감사 로그, 서버 로그)
+data/uploads/
+outputs/reports/
+outputs/outbox/
+outputs/shots/
+outputs/audit_log.jsonl
+outputs/_*.log
+
+# 제출 문서 작업본과 개인정보가 든 문서, 대회 운영 문서 (저장소에는 코드만 올린다)
+submission/
+제4회_경남_AI_SW_경진대회_참가신청서*.md
+03-1_제4회_경남AI_SW경진대회_운영규정*.md
+nasa_nde_methods_and_capabilities_handbook.md
+Ultrasonic C-scan Segmentation for Composites.md
+
+# 내려받은 외부 저장소 원본 (필요한 빌드 파일만 web/vendor/에 라이선스와 함께 넣었다)
+GSAP-master/
+liquid-glass-js-main/
+thinking-orbs-main/
+skills-main/
+ultrasonic-c-scan-segmentation-for-composites-main/
+
+# 백업
+_backup_web_*/
+
+# 편집기, OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+thinking-orbs-main.zip

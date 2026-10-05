@@ -1,0 +1,82 @@
+{
+  "package_id": "HL-EX01_C-check_2026-10",
+  "aircraft": "HL-EX01",
+  "aircraft_note": "가상 등록부호 (EXAMPLE_ONLY)",
+  "check_type": "C-check (정기점검, 가상)",
+  "operator": "가상 운영사 (EXAMPLE_ONLY)",
+  "created": "2026-10-04",
+  "data_note": "C-scan 격자는 Cranfield CompInnova WP2 공개 데이터(CC BY 4.0)의 변환본이다. 기체, 작업카드, 부위, 절차, 기준, 이전 점검 기록은 모두 가상이다.",
+  "cards": [
+    {
+      "card_id": "CARD-01",
+      "title": "동체 좌측 외피 패널 12, 지정 SDI 작업",
+      "zone_id": "Z1",
+      "location_id": "LOC-FUS-L-012",
+      "procedure_id": "GNU-NTM-EX-51-01",
+      "criteria_id": "GNU-ADL-EX-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "CARD-01_amplitude_db.csv",
+      "meta_file": "CARD-01_meta.json"
+    },
+    {
+      "card_id": "CARD-02",
+      "title": "동체 좌측 외피 패널 27, 공구 낙하 의심 부위 범위 평가",
+      "zone_id": "Z1",
+      "location_id": "LOC-FUS-L-027",
+      "procedure_id": "GNU-NTM-EX-51-01",
+      "criteria_id": "GNU-ADL-EX-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "CARD-02_amplitude_db.csv",
+      "meta_file": "CARD-02_meta.json"
+    },
+    {
+      "card_id": "CARD-03",
+      "title": "우측 날개 하면 외피 4, 육안 점검 발견 손상 범위 평가",
+      "zone_id": "Z1",
+      "location_id": "LOC-WNG-R-004",
+      "procedure_id": "GNU-NTM-EX-51-02",
+      "criteria_id": "GNU-ADL-EX-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "CARD-03_amplitude_db.csv",
+      "meta_file": "CARD-03_meta.json"
+    },
+    {
+      "card_id": "CARD-04",
+      "title": "우측 날개 하면 외피 19, 이전 점검 기록 손상 추적",
+      "zone_id": "Z2",
+      "location_id": "LOC-WNG-R-019",
+      "procedure_id": "GNU-NTM-EX-51-02",
+      "criteria_id": "GNU-ADL-EX-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "CARD-04_amplitude_db.csv",
+      "meta_file": "CARD-04_meta.json"
+    },
+    {
+      "card_id": "CARD-05",
+      "title": "동체 우측 외피 패널 8, 지정 SDI 작업 (개정번호 미기재)",
+      "zone_id": "Z1",
+      "location_id": "LOC-FUS-R-008",
+      "procedure_id": "GNU-NTM-EX-51-01",
+      "criteria_id": "GNU-ADL-EX-001",
+      "material": "CFRP",
+      "scan_file": "CARD-05_amplitude_db.csv",
+      "meta_file": "CARD-05_meta.json"
+    },
+    {
+      "card_id": "CARD-06",
+      "title": "수평 꼬리날개 좌측 외피 3, 지정 SDI 작업",
+      "zone_id": "Z2",
+      "location_id": "LOC-EMP-L-003",
+      "procedure_id": "GNU-NTM-EX-51-01",
+      "criteria_id": "GNU-ADL-EX-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "CARD-06_amplitude_db.csv",
+      "meta_file": "CARD-06_meta.json"
+    }
+  ]
+}

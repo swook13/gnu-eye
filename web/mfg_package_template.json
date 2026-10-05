@@ -1,0 +1,23 @@
+{
+  "domain": "manufacturing",
+  "package_id": "LOT-0000_출하검사",
+  "lot_id": "LOT-0000",
+  "check_type": "출하 전 초음파 검사",
+  "customer": "고객 이름",
+  "data_note": "데이터 출처를 적는다",
+  "cards": [
+    {
+      "card_id": "PART-01",
+      "title": "부품 이름",
+      "zone_id": "A",
+      "part_number": "부품번호",
+      "serial_number": "일련번호",
+      "procedure_id": "GNU-UT-EX-MFG-01",
+      "criteria_id": "GNU-SPEC-UT-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "PART-01_amplitude_db.csv",
+      "meta_file": "PART-01_meta.json"
+    }
+  ]
+}

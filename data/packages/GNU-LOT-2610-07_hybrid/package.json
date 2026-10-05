@@ -1,0 +1,101 @@
+{
+  "domain": "manufacturing",
+  "package_id": "GNU-LOT-2610-07_hybrid",
+  "lot_id": "GNU-LOT-2610-07",
+  "check_type": "출하 전 초음파 C-scan 검사 (가상)",
+  "customer": "가상 고객 A (EXAMPLE_ONLY)",
+  "created": "2026-10-05",
+  "data_note": "실측 2건(PART-03, PART-05)은 Cranfield WP2 충격 시편 변환본(CC BY 4.0)을 가상 부품번호에 대응시킨 것이고, 합성 5건은 결함 크기·감쇠·노이즈를 가정한 합성 데이터다. 로트, 부품, 고객사양, 절차, 과거 NCR 이력은 모두 가상이다.",
+  "cards": [
+    {
+      "card_id": "PART-01",
+      "title": "윙 리브 브래킷, 일반 구역 [합성]",
+      "zone_id": "B",
+      "part_number": "GNU-P-1001",
+      "serial_number": "SN-2610-01",
+      "procedure_id": "GNU-UT-EX-MFG-01",
+      "criteria_id": "GNU-SPEC-UT-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "PART-01_amplitude_db.csv",
+      "meta_file": "PART-01_meta.json"
+    },
+    {
+      "card_id": "PART-02",
+      "title": "외피 패널 체결부, 중요 구역 [합성]",
+      "zone_id": "A",
+      "part_number": "GNU-P-1002",
+      "serial_number": "SN-2610-02",
+      "procedure_id": "GNU-UT-EX-MFG-01",
+      "criteria_id": "GNU-SPEC-UT-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "PART-02_amplitude_db.csv",
+      "meta_file": "PART-02_meta.json"
+    },
+    {
+      "card_id": "PART-03",
+      "title": "외피 패널, 중요 구역 (이송 중 공구 낙하 의심) [실측]",
+      "zone_id": "A",
+      "part_number": "GNU-P-1003",
+      "serial_number": "SN-2610-03",
+      "procedure_id": "GNU-UT-EX-MFG-01",
+      "criteria_id": "GNU-SPEC-UT-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "PART-03_amplitude_db.csv",
+      "meta_file": "PART-03_meta.json"
+    },
+    {
+      "card_id": "PART-04",
+      "title": "스트링거 플랜지, 중요 구역 (고객사양 개정번호 미기재) [합성]",
+      "zone_id": "A",
+      "part_number": "GNU-P-1004",
+      "serial_number": "SN-2610-04",
+      "procedure_id": "GNU-UT-EX-MFG-01",
+      "criteria_id": "GNU-SPEC-UT-001",
+      "material": "CFRP",
+      "scan_file": "PART-04_amplitude_db.csv",
+      "meta_file": "PART-04_meta.json"
+    },
+    {
+      "card_id": "PART-05",
+      "title": "액세스 도어, 일반 구역 (취급 충격 의심) [실측]",
+      "zone_id": "B",
+      "part_number": "GNU-P-1005",
+      "serial_number": "SN-2610-05",
+      "procedure_id": "GNU-UT-EX-MFG-01",
+      "criteria_id": "GNU-SPEC-UT-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "PART-05_amplitude_db.csv",
+      "meta_file": "PART-05_meta.json"
+    },
+    {
+      "card_id": "PART-06",
+      "title": "윙 리브 브래킷, 일반 구역 (스캔 시작부 표면 신호) [합성]",
+      "zone_id": "B",
+      "part_number": "GNU-P-1001",
+      "serial_number": "SN-2610-06",
+      "procedure_id": "GNU-UT-EX-MFG-01",
+      "criteria_id": "GNU-SPEC-UT-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "PART-06_amplitude_db.csv",
+      "meta_file": "PART-06_meta.json"
+    },
+    {
+      "card_id": "PART-07",
+      "title": "외피 패널 체결부, 일반 구역 [합성]",
+      "zone_id": "B",
+      "part_number": "GNU-P-1002",
+      "serial_number": "SN-2610-07",
+      "procedure_id": "GNU-UT-EX-MFG-01",
+      "criteria_id": "GNU-SPEC-UT-001",
+      "criteria_rev": "A",
+      "material": "CFRP",
+      "scan_file": "PART-07_amplitude_db.csv",
+      "meta_file": "PART-07_meta.json"
+    }
+  ]
+}

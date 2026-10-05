@@ -1,0 +1,15 @@
+{
+  "criteria_id": "GNU-SPEC-UT-001",
+  "revision": "B",
+  "domain": "manufacturing",
+  "title": "복합재 적층 부품 초음파 검사 수락 기준 (가상 고객사양)",
+  "customer": "가상 고객 A",
+  "source": "EXAMPLE_ONLY",
+  "disclaimer": "가상·시연용 수치입니다. 실제 고객사양과 무관합니다. 값은 이전 버전(GNU-Eye v1)의 가상 사양 GNU-SPEC-UT-001에서 옮겼습니다. 지시 간 거리는 경계 상자 사이의 최단 거리로, 누적 면적 비율은 스캔 영역 전체 대비로 계산합니다. Rev A 대비 중요 구역 한도를 완화한 개정본이라고 가정했습니다.",
+  "approved": true,
+  "near_limit_ratio": 0.05,
+  "zones": {
+    "A": {"name": "중요 구역 (가상)", "max_dimension_mm": 9.0, "min_gap_mm": 20.0, "max_area_pct": 1.0},
+    "B": {"name": "일반 구역 (가상)", "max_dimension_mm": 12.7, "min_gap_mm": null, "max_area_pct": 1.0}
+  }
+}

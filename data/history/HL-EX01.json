@@ -1,0 +1,23 @@
+{
+  "aircraft": "HL-EX01",
+  "source": "EXAMPLE_ONLY",
+  "disclaimer": "가상 이전 점검 기록. Cranfield 데이터에는 같은 시편을 시간 간격을 두고 다시 찍은 스캔이 없다.",
+  "records": [
+    {
+      "location_id": "LOC-FUS-L-012",
+      "date": "2024-10-11",
+      "check": "C-check",
+      "major_mm": 9.0,
+      "disposition": "ALLOW",
+      "note": "가상 기록"
+    },
+    {
+      "location_id": "LOC-WNG-R-019",
+      "date": "2024-10-12",
+      "check": "C-check",
+      "major_mm": 16.0,
+      "disposition": "REPAIR",
+      "note": "가상 기록. 수리 보류 후 추적 관찰로 가정"
+    }
+  ]
+}

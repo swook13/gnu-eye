@@ -1,0 +1,15 @@
+{
+  "criteria_id": "GNU-ADL-EX-001",
+  "revision": "B",
+  "title": "복합재 외피 허용 손상 한도 (가상)",
+  "source": "EXAMPLE_ONLY",
+  "disclaimer": "가상·시연용 수치입니다. 실제 구조수리매뉴얼(SRM)과 무관하며, 시연에서 세 가지 처분이 모두 나타나도록 정한 값입니다. 실제 한도는 깊이·위치·인접 구조에도 좌우되지만 여기서는 평면 크기와 간격만 봅니다.",
+  "approved": true,
+  "change_note": "Rev A 대비 Z1 허용 한도 10.0 → 12.0 mm, 수리 가능 한도 20.0 → 18.0 mm (가상의 개정)",
+  "near_limit_ratio": 0.05,
+  "growth_flag_mm": 2.0,
+  "zones": {
+    "Z1": {"name": "주요 구조 구역 (가상)", "allowable_mm": 12.0, "repairable_mm": 18.0, "min_gap_mm": 25.0},
+    "Z2": {"name": "일반 구역 (가상)", "allowable_mm": 15.0, "repairable_mm": 30.0, "min_gap_mm": 20.0}
+  }
+}

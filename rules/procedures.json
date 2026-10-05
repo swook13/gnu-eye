@@ -1,0 +1,17 @@
+{
+  "source": "EXAMPLE_ONLY",
+  "disclaimer": "가상·시연용 절차입니다. 실제 제작사 NDT 매뉴얼(NTM)과 무관합니다. 두께 범위를 절차마다 두는 형식만 공개 사례(787 NDT 매뉴얼 Part 4-51-00-22, A350 작업 A350-A-51-94-45-00001-35-AA-A)를 따랐습니다.",
+  "approved": true,
+  "procedures": [
+    {"id": "GNU-NTM-EX-51-01", "title": "단일 적층 CFRP 초음파 위상배열 검사 (얇은 판, 가상)",
+     "materials": ["CFRP"], "thickness_min_mm": 1.0, "thickness_max_mm": 3.0,
+     "method": "6dB_drop", "drop_db": 6.0, "min_indication_area_mm2": 3.0},
+    {"id": "GNU-NTM-EX-51-02", "title": "단일 적층 CFRP 초음파 위상배열 검사 (두꺼운 판, 가상)",
+     "materials": ["CFRP"], "thickness_min_mm": 3.0, "thickness_max_mm": 18.0,
+     "method": "6dB_drop", "drop_db": 6.0, "min_indication_area_mm2": 3.0},
+    {"id": "GNU-UT-EX-MFG-01", "domain": "manufacturing",
+     "title": "CFRP 적층 부품 출하 전 초음파 C-scan 검사 (제조, 가상)",
+     "materials": ["CFRP"], "thickness_min_mm": 1.0, "thickness_max_mm": 10.0,
+     "method": "6dB_drop", "drop_db": 6.0, "min_indication_area_mm2": 3.0}
+  ]
+}
