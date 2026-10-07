@@ -221,9 +221,9 @@ data/, rules/, outputs/
 - **기본**: 노트북에서 `uvicorn api.main:app` 실행, `http://localhost:8000` 접속. FastAPI가 `web/`도 함께 서빙한다.
 - **LLM 전환**: 환경변수 `OLLAMA_HOST`, `GNUEYE_MODEL`만 바꾼다.
   - 노트북: `http://localhost:11434`, `qwen2.5:7b`
-  - H200: SSH 포트 연결(`ssh -L 11435:localhost:11434 GNU_server`) 후 `http://localhost:11435`
+  - H200: 학교 서버에 SSH 포트 연결 후 `http://localhost:11435`
 - **H200 상태** [사실, 2026-10-04 밤 확인]: SSH 키 등록 완료. Ubuntu 24.04, RAM 1.5 TB, 디스크 여유 641 GB, 인터넷 연결됨. GPU는 H200 NVL 1장이지만 **우리 계정에는 MIG 조각 `1g.18gb` (16 GB)만 보인다.** 다른 팀도 같은 방식으로 나눠 쓴다. `127.0.0.1:11434`는 다른 팀의 Ollama라 쓰지 않는다.
-- **H200 설치** [사실]: `~/ollama`에 사용자 영역 설치, 전용 포트 **11525**, 모델은 `~/ollama_models`. 서버에서 `~/ollama/start.sh`로 띄운다.
+- **H200 설치** [사실]: `~/ollama`에 사용자 영역 설치, 전용 포트, 모델은 `~/ollama_models`. 서버에서 `~/ollama/start.sh`로 띄운다.
 - **모델**: `qwen2.5:32b`는 16 GB에 다 올라가지 않아 CPU와 나눠 실행됐고 첫 응답이 8분 넘게 나오지 않았다 [사실]. 지우고 **`qwen2.5:14b`(약 9 GB)** 로 바꿨다. 30B 이상 모델은 이 서버 배정으로는 쓸 수 없다.
 - **실행**: `run_local.bat`(노트북 7B), `run_h200.bat`(SSH 포트 연결 후 H200 14B). FastAPI는 두 경우 모두 노트북에서 돈다.
 - **외부 API는 쓰지 않는다.**

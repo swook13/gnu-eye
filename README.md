@@ -52,7 +52,7 @@ python -m uvicorn api.main:app --port 8000
 ```
 브라우저에서 http://localhost:8000 → 시작 화면 → 시작하기 → 홈.
 
-`run_h200.bat`는 팀이 쓴 학교 GPU 서버(SSH 별칭 `GNU_server`, 포트 11525)에 SSH 터널을 열어 `qwen2.5:14b`를 씁니다. 다른 환경에서는 `OLLAMA_HOST`만 바꾸면 됩니다.
+`run_h200.bat`는 학교 GPU 서버에 SSH 터널을 열어 `qwen2.5:14b`를 씁니다(접속 설정은 각자의 `~/.ssh/config`에 두며 저장소에는 포함하지 않습니다). 다른 환경에서는 `OLLAMA_HOST`만 바꾸면 됩니다.
 
 LLM이 없으면 화면의 실행 방식에서 **고정 순서(LLM 없음)** 를 고르면 같은 도구를 정해진 순서로 실행합니다. 결과 수치는 같습니다.
 
