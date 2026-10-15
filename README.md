@@ -15,6 +15,15 @@
 
 > 기준, 절차, 기체·작업카드, 고객사양, 이전 점검 기록, 과거 NCR 이력은 모두 **시연용 가상 값(EXAMPLE_ONLY)** 입니다. 실제 제작사·고객 문서와 무관합니다.
 
+## 수상
+
+**제4회 경남 AI·SW 경진대회 대학부 우수상** (2026-10-14, (사)경남인공지능ICT협회)
+
+- 본선 발표: 2026-10-12, 발표 7분 + 질의 2분 · [발표자료 PDF](docs/presentation/2026-10-12_finals_slides.pdf)
+- [상장](docs/award/2026-10-14_gyeongnam-ai-sw-contest_excellence-award.jpg)
+- 심사받은 제출본 코드는 태그 [`contest-submission-2026-10-06`](https://github.com/swook13/gnu-eye/tree/contest-submission-2026-10-06)입니다. 그 뒤 커밋은 대회 후에 더한 것입니다. `eb4ba08`(10/7)은 README와 DESIGN.md에서 서버 접속 정보만 지운 커밋입니다.
+- 발표자료 7장의 수작업 시간은 실측이 아닌 모의 추정입니다(슬라이드에 "측정 아님"으로 표기).
+
 ## 구조
 
 ```

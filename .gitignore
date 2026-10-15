@@ -36,3 +36,23 @@ _backup_web_*/
 Thumbs.db
 desktop.ini
 thinking-orbs-main.zip
+
+# 루트에 쌓인 대회 작업 자료와 개인 문서(재학증명서, 통장사본, 신청서, 제출 ZIP, 원본 영상, 경쟁분석).
+# 공개할 수상·발표 자료는 docs/에 골라 넣는다.
+/00_최종제출물_백업_*/
+/01_본선수정본_*/
+/02_인수인계_*/
+/제출물_지누아이_*/
+/최종ZIP_*/
+/*.pdf
+/*.zip
+/*.mp4
+/*.jpg
+/*.png
+/*.pptx
+/*.txt
+!/requirements.txt
+/*.md
+!/README.md
+!/DESIGN.md
+/촬영용_크롬_실행.bat
