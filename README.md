@@ -31,7 +31,7 @@
 | 이름 | 담당 역할 | 주요 작업 내용 |
 | --- | --- | --- |
 | [**김승욱**](https://github.com/swook13) | **PM** | 개발 일정 관리, Tool-calling Agent·Guardrail 루프 및 항공 NDT 보고서·NCR 생성 구현 |
-| **구민준** | **Technical Lead** | 항공 규격(NTM·SRM) 판정·처분 Engine, 로컬 sLLM Agent 추론 최적화·검증 및 E2E Platform 구축 |
+| [**구민준**](https://github.com/minjun49) | **Technical Lead** | 항공 규격(NTM·SRM) 판정·처분 Engine, 로컬 sLLM Agent 추론 최적화·검증 및 E2E Platform 구축 |
 | [**김태우**](https://github.com/taewoo2922-web) | **NDT & Measurement Lead** | 6 dB Drop 결함 측정·유사 이력 검색 Agent Tool 구현 및 실측·합성 C-scan Dataset 구축 |
 
 ## 구조
