@@ -24,6 +24,16 @@
 - 심사받은 제출본 코드는 태그 [`contest-submission-2026-10-06`](https://github.com/swook13/gnu-eye/tree/contest-submission-2026-10-06)입니다. 그 뒤 커밋은 대회 후에 더한 것입니다. `eb4ba08`(10/7)은 README와 DESIGN.md에서 서버 접속 정보만 지운 커밋입니다.
 - 발표자료 7장의 수작업 시간은 실측이 아닌 모의 추정입니다(슬라이드에 "측정 아님"으로 표기).
 
+## 팀원 및 역할 분담
+
+> **팀명:** 지누아이 (김승욱 · 구민준 · 김태우) · 경상국립대학교 · 제4회 경남 AI·SW 경진대회 대학부 우수상
+
+| 이름 | 담당 역할 | 주요 작업 내용 |
+| --- | --- | --- |
+| [**김승욱**](https://github.com/swook13) | **PM** | 개발 일정 관리, Tool-calling Agent·Guardrail 루프 및 항공 NDT 보고서·NCR 생성 구현 |
+| **구민준** | **Technical Lead** | 항공 규격(NTM·SRM) 판정·처분 Engine, 로컬 sLLM Agent 추론 최적화·검증 및 E2E Platform 구축 |
+| [**김태우**](https://github.com/taewoo2922-web) | **NDT & Measurement Lead** | 6 dB Drop 결함 측정·유사 이력 검색 Agent Tool 구현 및 실측·합성 C-scan Dataset 구축 |
+
 ## 구조
 
 ```
